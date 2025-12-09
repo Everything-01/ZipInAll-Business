@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Zipinall – Simplifying newspaper subscriptions." />
+    <title>Zipinall – Newspaper Subscription Made Simple</title>
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo" role="button" tabindex="0">Zipinall</div>
+
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="privacy.html" data-page="policy">Privacy Policy</a></li>
+                <li><a href="terms.html" data-page="terms">Terms</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Simplifying Newspaper Subscriptions</h1>
+                <p>Manage deliveries, automate payments, and stay updated easily.</p>
+            </div>
+            <div class="hero-img">
+                <img src="assets/images/zipinall-logo.jpg" />
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Regular sections -->
+        <section id="features" class="features">
+            <h2>Why Zipinall?</h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <h3>Delivery Tracking</h3>
+                    <p>Track daily newspaper delivery.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Automated Payments</h3>
+                    <p>Handle payments without cash hassles.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Vendor Dashboard</h3>
+                    <p>Vendors get a smart customer overview.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how" class="how">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step"><span>1</span>Download app</div>
+                <div class="step"><span>2</span>Select your newspaper</div>
+                <div class="step"><span>3</span>Track & pay monthly</div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+
+            <form id="contact-form" action="https://formspree.io/f/movgnlpa" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- Markdown content area -->
+        <div id="app"></div>
+    </main>
+
+    <footer>
+        <p>© 2025 Zipinall | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/markdown-parser.js" defer></script>
+    <script src="js/page-renderer.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
