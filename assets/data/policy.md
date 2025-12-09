@@ -2,7 +2,7 @@
 **Last Updated: 23/September/2025**
 
 We respect your privacy and are committed to protecting your personal information.  
-This Privacy Policy explains how the *ZipInAll* ("we", "our", or "us") collects, uses, and safeguards your data.
+This Privacy Policy explains how the **ZipInAll** ("we", "our", or "us") collects, uses, and safeguards your data.
 
 ---
 
@@ -10,15 +10,12 @@ This Privacy Policy explains how the *ZipInAll* ("we", "our", or "us") collects,
 
 When you use the Customer App, we collect the following information:
 
-- Name  
-- Phone number<br>
-  (verified via OTP)  
-- Email address  
-- Home address and area<br>
-  (entered manually)  
-- Missed delivery reports  
-- Your subscription data<br>
-  (active and expired) 
+- Name
+- Phone number *(verified via OTP)*
+- Email address
+- Home address and area *(entered manually)*
+- Missed delivery reports
+- Your subscription data *(active and expired)*
 
 > ❗️We do **not** collect GPS data, device data, or financial information.
 

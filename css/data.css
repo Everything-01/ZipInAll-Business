@@ -1,0 +1,152 @@
+/* =============================================================================
+   CONTAINER & TYPOGRAPHY
+   ============================================================================= */
+#app {
+    margin: 40px auto 60px; /* Reduced outer margin */
+    max-width: 800px;
+    padding: 40px;          /* Reduced padding for better mobile fit */
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f2f2f2;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Base text styling */
+p {
+    font-size: 15px; /* Slightly refined size */
+    color: #444;
+    margin-bottom: 5px; /* DRASTICALLY REDUCED to fix gaps */
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+/* =============================================================================
+   HEADINGS (Fixed: No Dots, No Gaps)
+   ============================================================================= */
+#app h1, #app h2, #app h3 {
+    color: #111;
+    line-height: 1.25;
+    margin-top: 10px;    /* Reduced: The <br> tags provide the real spacing */
+    margin-bottom: 10px; /* Reduced */
+}
+
+/* H1: Main Title (e.g., Privacy Policy) */
+#app h1 {
+    font-size: 32px;
+    font-weight: 800;
+    border-bottom: 4px solid #ecd804; /* Thicker underline brand color */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* H2: Section Titles (e.g., 1. Information We Collect) */
+#app h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    /* REMOVED: display:flex and ::before (Yellow Dot) */
+    /* The number "1." in your text is now the only indicator */
+}
+
+/* H3: Subsections */
+#app h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Date styling */
+p.effective-date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 25px;
+    font-style: italic;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+/* =============================================================================
+   ELEMENTS: HR, LINKS, QUOTES
+   ============================================================================= */
+/* Horizontal Rule */
+hr {
+    border: 0;
+    height: 1px;
+    background: #eaeaea;
+    margin: 15px 0; /* Reduced margin to prevent huge whitespace */
+}
+
+/* Links */
+#app a {
+    color: #d4b700;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px dotted #d4b700;
+    transition: all 0.2s ease;
+}
+#app a:hover {
+    color: #ecd804;
+    border-bottom: 1px solid #ecd804;
+}
+
+/* Blockquotes (The ">" text in your markdown) */
+.info-box {
+    background: #fffdf0; /* Very light yellow bg */
+    border-left: 4px solid #ecd804;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* =============================================================================
+   LIST ITEMS (The "Supabase" Fix)
+   ============================================================================= */
+.list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px; 
+    color: #444;
+    line-height: 1.6;
+}
+
+/* The Bullet Point */
+.list-item::before {
+    content: "•";
+    color: #ecd804;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-right: 12px;
+    flex-shrink: 0;
+    line-height: 1.1; 
+    margin-top: 2px;
+}
+
+/* The Text Wrapper (Fixes alignment) */
+.list-item > span {
+    flex: 1;
+    display: block;
+    min-width: 0;
+}
+
+/* Meta Text (Text in brackets) */
+.meta-text {
+    display: block;
+    font-size: 0.85em;
+    color: #999;
+    margin-top: 2px;
+    font-style: italic;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    #app {
+        margin: 20px 15px;
+        padding: 25px;
+    }
+    #app h1 { font-size: 26px; }
+    #app h2 { font-size: 18px; }
+}

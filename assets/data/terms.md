@@ -1,111 +1,147 @@
-# Terms & Conditions
+# Terms & Conditions  
 **Last Updated: 23/September/2025**
 
-Welcome to **ZipInAll** ("we", "our", or "us"). By using our mobile application ("App"), you agree to these Terms and Conditions ("Terms"). Please read them carefully.
+Welcome to the **ZipInAll** ("we", "our", or "us").  
+By using this mobile application ("App"), you agree to comply with and be bound by these Terms and Conditions ("Terms"). Please read them carefully.
 
 ---
 
 ## 1. Acceptance of Terms
 
-- By accessing or using the App, you agree to be bound by these Terms and our Privacy Policy.
-- If you do not agree, please uninstall the App.
+By downloading or using the App, you confirm your agreement to these Terms and our Privacy Policy.  
+If you do not agree, please uninstall the App.
 
 ---
 
-## 2. User Eligibility
+## 2. App Purpose
 
-- You must be at least 13 years old to use this App.
-- By using the App, you represent and warrant that you meet these eligibility requirements.
-- Parents and guardians are responsible for supervising minor's use of the App.
+This App enables customers to:
+
+- View active and expired newspaper subscriptions  
+- Report missed deliveries  
+- View delivery statuses as confirmed or rejected by their assigned delivery agent  
+- View declared no-delivery days  
+- See which newspapers are offered by their agent  
+
+> ℹ️ We do **not** handle delivery or payments. The App is a **utility and tracking tool** only.
 
 ---
 
 ## 3. Account Registration
 
-- You are responsible for maintaining the confidentiality of your account information.
-- You agree to provide accurate, current, and complete information during registration.
-- You are solely responsible for all activity under your account.
-- You must immediately notify us of any unauthorized use of your account.
+To create an account, you must:
+
+- Provide your name, phone number (OTP verified), email, and address  
+- Manually enter your area of residence  
+
+Based on your area, the App links you to a delivery agent operating nearby.
 
 ---
 
-## 4. User Responsibilities
+## 4. Missed Delivery Reports
 
-You agree **not** to:
+You may report missed deliveries via the App. These reports will:
 
-- Use the App for any illegal or unauthorized purpose.
-- Harass, abuse, or harm any person or entity.
-- Post false, misleading, or defamatory content.
-- Attempt to bypass security measures or access unauthorized areas.
-- Reverse engineer or attempt to derive the App's source code.
-- Use the App to distribute malware or harmful content.
+- Be marked as **pending** by default  
+- Be reviewed and either **confirmed or rejected** by your assigned agent  
+- Update their status visibly in the App once verified  
 
 ---
 
-## 5. Newspaper Subscriptions
+## 5. No-Delivery Days
 
-- Subscriptions are subject to availability in your area.
-- Pricing and terms are set by the newspaper vendors.
-- Delivery schedules are determined by vendors and are subject to change.
-- We are **not responsible** for missed deliveries or subscription disputes between you and vendors.
+Agents may declare specific days as **no-delivery days** for selected newspapers in your area.  
+These will be shown to you in advance.
 
 ---
 
-## 6. Limitation of Liability
+## 6. Agent's Newspaper Offerings
 
-To the fullest extent permitted by law:
-
-- We are **not liable** for indirect, incidental, or consequential damages.
-- We are **not liable** for losses resulting from missed deliveries, service interruptions, or disputes with vendors.
-- Our total liability shall not exceed the amount you paid for the service.
+You can view a list of newspapers your assigned agent delivers.  
+This helps you know if there are newspapers you can still subscribe to.
 
 ---
 
-## 7. Indemnification
+## 7. Payments
 
-You agree to indemnify and hold us harmless from any claims, damages, or expenses arising from:
+All payments between you and your agent occur **outside** the App (e.g., UPI, cash).
 
-- Your use of the App
-- Your violation of these Terms
-- Your violation of any third-party rights
-- Any content you submit through the App
+We:
 
----
-
-## 8. Termination
-
-We may suspend or terminate your account immediately if you:
-
-- Violate these Terms or our Privacy Policy
-- Engage in fraudulent or illegal activity
-- Abuse the platform or other users
+- ❌ Do **not** process or verify payments  
+- ❌ Are **not liable** for payment disputes  
+- ✅ May step in for serious issues on a case-by-case basis  
 
 ---
 
-## 9. Dispute Resolution
+## 8. Data Collection and Use
 
-Any disputes shall be resolved through binding arbitration under applicable laws, except for claims involving intellectual property or urgent injunctive relief.
+We collect the following data:
 
----
+- Name, phone number, email, address, and area  
+- Missed delivery reports and your subscription details  
 
-## 10. Changes to Terms
+> 🚫 We **do not** track GPS or collect payment information.
 
-We may update these Terms at any time. Continued use of the App constitutes acceptance of updated Terms.
-
----
-
-## 11. Governing Law
-
-These Terms are governed by applicable local and international laws.
+- All data is securely stored using **Supabase**  
+- OTP verification is handled by **Message Central**
 
 ---
 
-## 12. Contact Us
+## 9. Third-Party Services
 
-For questions about these Terms, contact: **reach.us.zipinall@gmail.com**
+By using the App, you agree to allow third-party services like:
+
+- **Supabase** (data storage)  
+- **Message Central** (OTP verification)  
+
+...to process your data as needed.
 
 ---
 
-## 13. Entire Agreement
+## 10. Intellectual Property
 
-These Terms constitute the entire agreement between you and us regarding the use of the App.
+All branding, content, software, and design are owned by us or our licensors.  
+You may **not copy, reproduce, or misuse** any part of the App without permission.
+
+---
+
+## 11. Limitations of Liability
+
+We are **not responsible for**:
+
+- The accuracy or timeliness of delivery data  
+- Missed or delayed deliveries  
+- Financial disputes between you and your agent  
+
+We may assist in serious matters, but the **relationship remains between you and the agent**.
+
+---
+
+## 12. Account Suspension
+
+We may suspend or terminate accounts for:
+
+- Fraudulent reports  
+- Abusive or inappropriate behavior  
+- Misuse of the App  
+
+---
+
+## 13. Changes to Terms
+
+We may update these Terms occasionally.  
+Continued use of the App means you accept the updated Terms.
+
+---
+
+## 14. Governing Law
+
+These Terms are governed by the laws of **Dharwad, Karnataka, India**.
+
+---
+
+## 15. Contact
+
+For any questions or support, contact:  
+📧 **reach.us.zipinall@gmail.com**
