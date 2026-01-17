@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newspaper Prices – Zipinall</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .price-table {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .row:last-child {
+      border-bottom: none;
+    }
+
+    .paper {
+      font-weight: 600;
+    }
+
+    .price {
+      color: #2f4dfc;
+      font-weight: 700;
+    }
+
+    .footer-note {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Newspaper Subscription Prices</h1>
+<p class="note">
+  Prices shown are approximate monthly rates.<br />
+  Final price = Agent-set price + Zipinall platform fee (₹10)
+</p>
+
+<div class="price-table">
+
+  <div class="row">
+    <div class="paper">Vijayavani</div>
+    <div class="price">₹180 + ₹10 = ₹190</div>
+  </div>
+
+  <div class="row">
+    <div class="paper">Vijaya Karnataka</div>
+    <div class="price">₹190 + ₹10 = ₹200</div>
+  </div>
+
+  <div class="row">
+    <div class="paper">Udayavani</div>
+    <div class="price">₹200 + ₹10 = ₹210</div>
+  </div>
+
+  <div class="row">
+    <div class="paper">Prajavani</div>
+    <div class="price">₹185 + ₹10 = ₹195</div>
+  </div>
+
+  <div class="row">
+    <div class="paper">Kannada Prabha</div>
+    <div class="price">₹175 + ₹10 = ₹185</div>
+  </div>
+
+  <div class="row">
+    <div class="paper">The Hindu</div>
+    <div class="price">₹260 + ₹10 = ₹270</div>
+  </div>
+
+  <div class="row">
+    <div class="paper">Times of India</div>
+    <div class="price">₹280 + ₹10 = ₹290</div>
+  </div>
+
+  <div class="row">
+    <div class="paper">Deccan Herald</div>
+    <div class="price">₹230 + ₹10 = ₹240</div>
+  </div>
+
+</div>
+
+<p class="footer-note">
+  Prices may vary by area and delivery agent.
+</p>
+
+</body>
+</html>
