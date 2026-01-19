@@ -1,87 +1,130 @@
 /* =============================================================================
-   1. HERO SECTION
+   GLOBAL VARIABLES (assumed already used)
    ============================================================================= */
+
+:root {
+    --primary: #ecd804;
+    --text-dark: #111;
+    --text-medium: #555;
+    --text-light: #777;
+    --bg-white: #ffffff;
+    --bg-body: #fafafa;
+    --shadow-sm: 0 6px 16px rgba(0,0,0,0.06);
+    --shadow-md: 0 10px 25px rgba(0,0,0,0.12);
+    --shadow-lg: 0 20px 45px rgba(0,0,0,0.2);
+    --container-width: 1200px;
+    --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =============================================================================
+   1. HERO SECTION (BACKGROUND + PRICING BOX)
+   ============================================================================= */
+
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 100px 5%; /* Good spacing */
-    min-height: 85vh; /* Takes up most of the screen */
-    background: linear-gradient(135deg, #fffcf0 0%, #fff 100%);
     position: relative;
+    min-height: 85vh;
+    padding: 100px 5%;
+    background:
+        linear-gradient(rgba(255,252,240,0.88), rgba(255,252,240,0.88)),
+        url("../assets/images/newwwws.jpg");
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 
-/* Decorative background blob */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -10%;
-    right: -10%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(236,216,4,0.15) 0%, rgba(255,255,255,0) 70%);
-    border-radius: 50%;
-    z-index: 0;
+.hero-container {
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
 }
 
+/* HERO TEXT */
 .hero-text {
-    flex: 1;
-    max-width: 600px;
-    z-index: 1;
     animation: slideUp 1s var(--ease);
 }
 
 .hero-text h1 {
-    font-size: clamp(36px, 5vw, 56px); /* Responsive Font Size */
+    font-size: clamp(38px, 5vw, 56px);
     font-weight: 900;
-    margin-bottom: 20px;
     line-height: 1.1;
+    margin-bottom: 18px;
     color: var(--text-dark);
 }
 
 .hero-text p {
     font-size: 18px;
     color: var(--text-medium);
-    margin-bottom: 30px;
     font-weight: 300;
 }
 
-.hero-img {
-    flex: 1;
-    max-width: 500px;
-    z-index: 1;
-    position: relative;
-    animation: fadeIn 1.5s ease;
-}
-
+/* HERO IMAGE */
 .hero-img img {
     width: 100%;
-    height: auto;
+    max-width: 260px;
+    display: block;
+    margin: auto;
     border-radius: 20px;
     box-shadow: var(--shadow-lg);
     transition: transform 0.4s var(--ease);
 }
 
-.hero-img:hover img {
-    transform: scale(1.02) rotate(1deg);
+.hero-img img:hover {
+    transform: scale(1.03);
+}
+
+/* PRICING BOX */
+.hero-pricing {
+    background: rgba(255,255,255,0.96);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    max-height: 340px;
+    overflow-y: auto;
+}
+
+.hero-pricing h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.price-item {
+    margin-bottom: 12px;
+}
+
+.price-item strong {
+    display: block;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.price-item span {
+    font-size: 13px;
+    color: var(--text-medium);
 }
 
 /* =============================================================================
    2. FEATURES SECTION
    ============================================================================= */
+
 .features {
     padding: 100px 5%;
     background: var(--bg-white);
 }
 
-.features h2, .how h2, .contact h2 {
+.features h2,
+.how h2,
+.contact h2 {
     font-size: 36px;
     font-weight: 800;
     text-align: center;
     margin-bottom: 60px;
-    position: relative;
 }
 
 .features-container {
@@ -89,7 +132,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     max-width: var(--container-width);
-    margin: 0 auto;
+    margin: auto;
 }
 
 .feature-card {
@@ -97,20 +140,16 @@
     padding: 40px 30px;
     border-radius: 16px;
     transition: all 0.3s var(--ease);
-    border: 1px solid transparent;
 }
 
 .feature-card:hover {
-    background: var(--bg-white);
     transform: translateY(-10px);
     box-shadow: var(--shadow-md);
-    border-color: rgba(0,0,0,0.05);
 }
 
 .feature-card h3 {
     font-size: 22px;
     margin-bottom: 15px;
-    color: var(--text-dark);
 }
 
 .feature-card p {
@@ -120,9 +159,10 @@
 /* =============================================================================
    3. HOW IT WORKS
    ============================================================================= */
+
 .how {
     padding: 100px 5%;
-    background: #fffcf5; /* Subtle warm tint */
+    background: #fffcf5;
 }
 
 .steps {
@@ -130,42 +170,38 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     max-width: var(--container-width);
-    margin: 0 auto;
+    margin: auto;
 }
 
 .step {
     background: var(--bg-white);
     padding: 40px;
     border-radius: 20px;
-    text-align: left;
     box-shadow: var(--shadow-sm);
     transition: transform 0.3s var(--ease);
-    position: relative;
 }
 
 .step:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-md);
 }
 
 .step span {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
     width: 60px;
     height: 60px;
     background: var(--primary);
-    color: var(--text-dark);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
     font-size: 24px;
     font-weight: 800;
-    border-radius: 50%;
     margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(236, 216, 4, 0.4);
 }
 
 /* =============================================================================
-   4. CONTACT
+   4. CONTACT SECTION
    ============================================================================= */
+
 .contact {
     padding: 100px 5%;
     background: var(--bg-white);
@@ -173,62 +209,59 @@
 
 #contact-form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
     background: var(--bg-body);
     padding: 40px;
     border-radius: 16px;
     box-shadow: var(--shadow-sm);
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    border: 2px solid transparent;
-    background: #fff;
     border-radius: 8px;
-    font-size: 16px;
-    font-family: inherit;
-    transition: all 0.3s ease;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+    border: 2px solid transparent;
 }
 
-input:focus, textarea:focus {
-    outline: none;
+input:focus,
+textarea:focus {
     border-color: var(--primary);
-    background: #fff;
-}
-
-button[type="submit"] {
-    width: 100%;
-    font-size: 18px;
+    outline: none;
 }
 
 /* =============================================================================
-   5. RESPONSIVE ANIMATIONS & MEDIA QUERIES
+   ANIMATIONS
    ============================================================================= */
-@keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =============================================================================
+   RESPONSIVE
+   ============================================================================= */
 
 @media (max-width: 900px) {
-    .hero {
-        flex-direction: column;
+    .hero-container {
+        grid-template-columns: 1fr;
         text-align: center;
-        padding-top: 120px;
-        gap: 40px;
     }
-    
-    .hero-text h1 { margin-bottom: 15px; }
-    
-    .steps { grid-template-columns: 1fr; }
-    
-    .step { margin-bottom: 10px; }
+
+    .hero-pricing {
+        max-width: 420px;
+        margin: auto;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
-    .features-container { grid-template-columns: 1fr; }
-    
-    #contact-form { padding: 25px; }
-    
-    .hero-img img { max-width: 100%; }
+    .hero {
+        padding-top: 120px;
+    }
 }
