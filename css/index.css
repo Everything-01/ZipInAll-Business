@@ -202,113 +202,113 @@
    4. CONTACT SECTION
    ============================================================================= */
 /* =============================================================================
-   4. CONTACT SECTION - Centered Card Style (as per your screenshot)
+   4. CONTACT SECTION - Clean Centered Card (Matching your screenshot)
    ============================================================================= */
 
 .contact {
-    padding: 110px 20px;
-    background: #f8f9fa;           /* Light single color background */
-    text-align: center;
-}
-
-.contact-wrapper {
-    max-width: 720px;
-    margin: 0 auto;
+    padding: 120px 20px;           /* Good top & bottom padding - do not reduce */
+    background: #f8f9fa;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-card {
     background: white;
-    padding: 60px 50px;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 65px 50px 70px;
     border-radius: 24px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
-    max-width: 100%;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+    text-align: center;
 }
 
 .contact h2 {
     font-size: 2.8rem;
-    margin-bottom: 16px;
-    color: #111;
+    font-weight: 800;
+    margin-bottom: 18px;
+    color: #111111;
 }
 
 .contact-desc {
-    font-size: 1.15rem;
+    font-size: 1.18rem;
     color: #555;
-    margin-bottom: 40px;
-    max-width: 520px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 38px;
+    line-height: 1.5;
 }
 
 .contact-info {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 
 .contact-info p {
-    margin: 12px 0;
-    font-size: 1.08rem;
+    margin: 10px 0;
+    font-size: 1.07rem;
 }
 
 .response-time {
-    color: #777;
+    color: #777777;
     font-size: 1rem;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    max-width: 520px;
+    gap: 26px;
+    max-width: 540px;
     margin: 0 auto;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 18px 22px;
+    padding: 18px 24px;
     border: 2px solid #e5e7eb;
     border-radius: 14px;
     font-size: 1.05rem;
-    transition: all 0.3s ease;
+    transition: border 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #ecd804;
     outline: none;
-    box-shadow: 0 0 0 4px rgba(236, 216, 4, 0.12);
+    box-shadow: 0 0 0 4px rgba(236, 216, 4, 0.1);
 }
 
 .contact-form textarea {
-    min-height: 160px;
+    min-height: 165px;
     resize: vertical;
 }
 
 .contact-form button {
     background-color: #ecd804;
-    color: #111;
-    padding: 16px 60px;
+    color: #111111;
+    padding: 16px 55px;
     border: none;
     border-radius: 12px;
-    font-size: 1.15rem;
+    font-size: 1.12rem;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     align-self: center;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .contact-form button:hover {
     background-color: #d4b700;
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
-/* Mobile Responsiveness */
+/* Mobile */
 @media (max-width: 640px) {
     .contact {
-        padding: 80px 15px;
+        padding: 90px 15px;
     }
     .contact-card {
-        padding: 45px 30px;
+        padding: 50px 30px 55px;
     }
     .contact h2 {
         font-size: 2.4rem;
